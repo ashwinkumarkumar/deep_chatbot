@@ -1,0 +1,93 @@
+{
+  "name": "deepchatbot",
+  "fields": [
+    {
+      "name": "id",
+      "type": "Edm.String",
+      "key": true,
+      "retrievable": true,
+      "searchable": true,
+      "filterable": true,
+      "sortable": true
+    },
+    {
+      "name": "content",
+      "type": "Edm.String",
+      "retrievable": true,
+      "searchable": true,
+      "filterable": true
+    },
+    {
+      "name": "contentVector",
+      "type": "Collection(Edm.Single)",
+      "retrievable": true,
+      "searchable": true,
+      "filterable": true,
+      "dimensions": 1536,
+      "vectorSearchProfile": "default-vector-profile"
+    },
+    {
+      "name": "userId",
+      "type": "Edm.String",
+      "retrievable": true,
+      "filterable": true
+    },
+    {
+      "name": "userMessage",
+      "type": "Edm.String",
+      "retrievable": true,
+      "searchable": true
+    },
+    {
+      "name": "botResponse",
+      "type": "Edm.String",
+      "retrievable": true,
+      "searchable": true
+    },
+    {
+      "name": "timestamp",
+      "type": "Edm.Double",
+      "retrievable": true,
+      "filterable": true,
+      "sortable": true
+    },
+    {
+      "name": "createdAt",
+      "type": "Edm.String",
+      "retrievable": true,
+      "filterable": true,
+      "sortable": true
+    },
+    {
+      "name": "userProfile",
+      "type": "Edm.String",
+      "retrievable": true,
+      "searchable": true,
+      "filterable": true
+    }
+  ],
+  "vectorSearch": {
+    "profiles": [
+      {
+        "name": "default-vector-profile",
+        "algorithm": "exhaustiveKnn"
+      }
+    ]
+  },
+  "semantic": {
+    "configurations": [
+      {
+        "name": "default-semantic-config",
+        "prioritizedFields": {
+          "titleField": null,
+          "prioritizedContentFields": [
+            {
+              "fieldName": "content"
+            }
+          ],
+          "prioritizedKeywordsFields": []
+        }
+      }
+    ]
+  }
+}

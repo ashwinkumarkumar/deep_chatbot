@@ -1,0 +1,6 @@
+- [x] Add /chat/completions endpoint to main.py
+- [x] Implement OpenAI-compatible request/response format
+- [x] Use llm to generate responses
+- [x] Handle messages array and extract user input
+- [x] Optionally integrate with memory if user_id provided (memory integrated in /chat endpoint)
+- [x] Test the endpoint (fixed embedding model mismatch)
