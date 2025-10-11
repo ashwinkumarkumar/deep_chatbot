@@ -15,7 +15,7 @@ import logging
 load_dotenv()
 
 
-logging.basicConfig(filename='flask_app.log', level=logging.DEBUG, format='%(asctime)s %(levelname)s %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
 
 # Load environment variables
 AZURE_OPENAI_DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT", "gpt-35-turbo")
@@ -341,6 +341,10 @@ def update_user_profile(user_id):
         print(f"Error updating user profile: {e}")
         return jsonify({'error': 'Failed to update user profile'}), 500
 
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({'status': 'healthy'})
+
 @app.route('/chat/completions', methods=['POST'])
 def chat_completions():
     """OpenAI-compatible chat completions endpoint"""
@@ -405,4 +409,4 @@ if __name__ == "__main__":
     print("Starting chat application with Azure AI Search memory...")
     print(f"Azure Search Endpoint: {AZURE_SEARCH_ENDPOINT}")
     print(f"Search Index: {AZURE_SEARCH_INDEX_NAME}")
-    app.run(host='0.0.0.0', port=8000, debug=True)
+    app.run(host='0.0.0.0', port=8000, debug=False)

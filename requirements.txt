@@ -1,0 +1,7 @@
+flask
+python-dotenv
+langchain
+langchain-openai
+azure-search-documents
+azure-identity
+gunicorn

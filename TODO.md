@@ -4,3 +4,10 @@
 - [x] Handle messages array and extract user input
 - [x] Optionally integrate with memory if user_id provided (memory integrated in /chat endpoint)
 - [x] Test the endpoint (fixed embedding model mismatch)
+- [x] Create Dockerfile for containerization
+- [x] Create requirements.txt
+- [x] Set up CI/CD pipeline with GitHub Actions
+- [ ] Set up Azure Container Registry
+- [ ] Configure Azure App Service for container deployment
+- [ ] Add environment variables in Azure
+- [ ] Test deployment
