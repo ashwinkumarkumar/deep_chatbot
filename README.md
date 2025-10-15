@@ -67,14 +67,17 @@ Later query on investments → Bot retrieves Norway context and mentions Norway'
 
 ### Screenshots
 
-1. **Screenshot 2025-10-10 225204.png**: Bot interface setup.
-   ![Bot interface setup](Screenshot 2025-10-10 225204.png)
-2. **Screenshot 2025-10-10 235724.png**: Initial Norway query.
-   ![Initial Norway query](Screenshot 2025-10-10 235724.png)
-3. **Screenshot 2025-10-11 000820.png**: Investment query with recall.
-   ![Investment query with recall](Screenshot 2025-10-11 000820.png)
-4. **Screenshot 2025-10-11 001111.png**: Structured resolution in action.
-   ![Structured resolution in action](Screenshot 2025-10-11 001111.png)
+#### Bot Interface Setup
+![Bot interface setup](Screenshot%202025-10-10%20225204.png)
+
+#### Initial Norway Query
+![Initial Norway query](Screenshot%202025-10-10%20235724.png)
+
+#### Investment Query with Recall
+![Investment query with recall](Screenshot%202025-10-11%20000820.png)
+
+#### Structured Resolution in Action
+![Structured resolution in action](Screenshot%202025-10-11%20001111.png)
 
 ## How Azure AI Search Enables High-Accuracy
 
